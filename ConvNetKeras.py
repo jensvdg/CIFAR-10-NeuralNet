@@ -41,7 +41,7 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 model.fit(X_train, Y_train,
-          batch_size=1000, epochs=120,
+          batch_size=64, epochs=120,
           verbose=1, validation_split=0.1,
           callbacks=callbacks)
 
